@@ -1,0 +1,27 @@
+{
+  "name": "mpt_concept",
+  "version": "1.0.0",
+  "description": "Improving Image data analysis",
+  "main": "main.js",
+  "repository": {},
+  "scripts": {
+    "start": "electron .",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=src/img/icon.icns --prune=true --out=dsit",
+    "package-win": "electron-packager . MPT_Concept-app --overwrite --asar=true --platform=win32 --arch=x64 --icon=src/img/icon.ico --prune=true --out=dist --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"MPT Concept App\"",
+    "package-linux": "electron-packager . MPT_Concept-app --overwrite --asar=false --platform=linux --arch=x64 --icon=src/img/icon.png --prune=true --out=dist"
+  },
+  "author": "Leandro Gabriel",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^5.0.2",
+    "electron-packager": "^13.1.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "lodash": "^4.17.14",
+    "popper.js": "^1.15.0",
+    "python-shell": "^1.0.7",
+    "sweetalert2": "^8.11.7"
+  }
+}

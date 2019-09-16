@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>MPT data analysis</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Bootstrap Optional JavaScript -->
+    <script>let $ = require('jquery');</script>
+    <script>require('popper.js');</script>
+    <script>require('bootstrap');</script>
+
+    <!-- Project specific CSS -->
+    <link rel="stylesheet" href="./css/navbar-fixed-left.min.css">
+    <link rel="stylesheet" href="./css/docs.css">
+
+    <!-- TODO: Add font-awesome CSS -->
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-i3S fixed-left">
+        <img class="logo" src="./img/i3S_logo.png" alt="logotipo i3S">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav">
+                <li>
+                    <a id="dataFile" class="nav-link text-primary">
+                        Pick a data file
+                    </a>
+                </li>
+                <!-- <li>
+                    <a class="nav-link text-primary">
+                        <label for="dataFile">Pick a data file</label>
+                        <input type="file" class="form-control-file" id="dataFile">
+                    </a>
+                </li> -->
+                <li>
+                    <p class="nav-link text-secondary"></p>
+                </li>
+                <li>
+                    <p class="nav-link text-secondary"></p>
+                </li>
+                <li id="l-start" class="d-none">
+                    <p class="nav-link text-secondary">
+                        Import started at:<br><span id="start"></span>
+                    </p>
+                </li>
+                <li id="l-end" class="d-none">
+                    <p class="nav-link text-secondary">
+                        Data aquisition ended at:<br><span id="end"></span>
+                    </p>
+                </li>
+                <li id="l-duration" class="d-none">
+                    <p class="nav-link text-secondary">
+                        Elapsed time:<br><span id="duration"></span>
+                    </p>
+                </li>
+
+                <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Trajectories</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item">Action</a>
+                    <a class="dropdown-item">Another action</a>
+                    <a class="dropdown-item">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item">Separated link</a>
+                    <a class="dropdown-item">One more separated link</a>
+                </div>
+            </li> -->
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">
+                MPT Protocol for image data analysis
+            </h1>
+            <h5>
+                <strong>
+                    Improving image data analysis and saving valuable time.
+                </strong>
+            </h5>
+        </div>
+        <div class="table-responsive" id="imported"></div>
+    </div>
+
+    <footer class="footer mt-auto py-3">
+        <span class="text-muted">
+            Facudade de Engenharia da Universidade do Porto, Mestrado em Engenharia Biomédica
+        </span>
+    </footer>
+
+    <script>
+        // You can also require other files to run in this process
+        require('./js/home.js');
+    </script>
+</body>
+
+</html>

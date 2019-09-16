@@ -1,0 +1,31 @@
+body {
+  min-height: 100vh;
+}
+
+.jumbotron{
+  padding: 2rem 1rem;
+}
+
+a {
+  cursor: pointer;
+}
+
+.logo {
+  width: 90%;
+}
+
+nav.navbar.navbar-expand-md.navbar-dark.bg-i3S.fixed-left {
+  background-color: #0E0E0E;
+}
+
+#navbarsExampleDefault{
+  padding-top: 30px;
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  background-color: #e9ecef;
+  padding: 1rem;
+  width: 100%;
+}
